@@ -18,7 +18,7 @@
 
  **返回示例**
 
-```javascript
+```js
   {
     "error_code": 0,
     "data": {
