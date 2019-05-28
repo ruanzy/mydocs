@@ -2,9 +2,7 @@
 - 系统管理
 	- [用户管理](/user/4)
 	- [角色管理](/role/index)
-- 动态sql
-	- [sql目录](/dsql/dir)
-	- [dsql工具](/dsql/tool)
+- [动态sql](/dsql/)
 - 常见业务的实现思路
 	- [token验证](/biz/token)
 	- [密码加密传输](/biz/tool)
