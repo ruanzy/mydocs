@@ -62,8 +62,8 @@ sqlTemplate.path = sql 默认sql
 ```java
 Map<String, Object> p = new HashMap<String, Object>();
 p.put("username", "haha");
-SqlPara sqlPara = SqlUtil.getSqlPara("user.info", p);
-String sql = sqlPara.getSql();
-Object[] args = sqlPara.getPara();
+BoundSql boundSql = sqlTemplate.getBoundSql("user.info", p);
+String sql = boundSql.getSql();
+Object[] args = boundSql.getParameters();
 Map<String, Object> map = jdbcTemplate.queryForMap(sql, args);
 ```
