@@ -2,11 +2,9 @@
 
 - 登录后获得用户信息接口
 
-**请求URL：** 
-- ` http://xx.com/api/user/info `
+**请求URL：** ` /user/info `
   
-**请求方式：**
-- GET 
+**请求方式：** GET 
 
 **参数：** 
 

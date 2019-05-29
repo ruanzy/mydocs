@@ -2,11 +2,11 @@
 
 - 用户登录接口
 
-**请求URL：** 
-- ` http://xx.com/api/user/login `
+**请求URL：** ` user/login `
   
-**请求方式：**
-- POST 
+**请求方式：** POST 
+
+**请求数据类型：** `application/json`
 
 **参数：** 
 
@@ -31,7 +31,7 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|code |int   |请求相应码，0：OK；非0：异常  |
+|code |int   |错误码，0：OK；非0：异常 |
 |data |Object   |返回数据  |
 
  **备注** 
