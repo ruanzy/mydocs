@@ -6,7 +6,7 @@
 	<version>1.0.0</version>
 </dependency>
 ```
-application.properties配置
+application.properties 配置
 
 sqlTemplate.path = sql 默认sql
 
@@ -58,7 +58,7 @@ sqlTemplate.path = sql 默认sql
 #end
 ```
 
-#### Java使用sqlTemplate
+#### sqlTemplate使用
 ```java
 Map<String, Object> p = new HashMap<String, Object>();
 p.put("username", "haha");
