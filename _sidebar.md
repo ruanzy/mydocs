@@ -1,7 +1,7 @@
 - [Home](/)
 - 系统管理
-	- [用户管理]
-  	- [用户登录](/user/login)
+	- 用户管理
+    - [用户登录](/user/login)
     - [获得用户信息](/user/info)
 	- [角色管理](/role/index)
 - [动态sql](/dsql/)
