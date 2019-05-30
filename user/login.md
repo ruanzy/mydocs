@@ -22,7 +22,7 @@
   {
     "code": 0,
     "data": {
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3VzZXIiOiJCIiwidGFyZ2V0X3VzZXIiOi.rSWamyAYwuHCo7IFAgd1oRpSP7nzL7BF5t7ItqpKViM"
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3V..."
     }
   }
 ```

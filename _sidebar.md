@@ -1,9 +1,8 @@
-- [Home](/)
+- [全局错误码](/error)
 - 系统管理
-	- 用户管理
-        - [用户登录](/user/login)
-        - [获得用户信息](/user/info)
-	- [角色管理](/role/index)
+  - [用户管理](/user)
+  - [角色管理](/user)
+  - [权限管理](/user)
 - [动态sql](/dsql/)
 - 常见业务的实现思路
 	- [token验证](/biz/token)

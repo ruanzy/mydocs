@@ -6,6 +6,8 @@
   
 **请求方式：** GET 
 
+**请求数据类型：** `application/x-www-form-urlencoded`
+
 **参数：** 
 
 |参数名|必选|类型|说明|
