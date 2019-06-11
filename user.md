@@ -4,7 +4,7 @@
   
 **请求方式：** POST 
 
-**请求数据类型：** `application/json`
+**CONTENT-TYPE：** `application/json`
 
 **参数：** 
 
