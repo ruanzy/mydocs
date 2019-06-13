@@ -38,9 +38,9 @@
 
 
 **rows参数说明** 
-PO_DESC, WL.WAREHOUSE_DESC,S.SUPPLIER_DESC,MTOA.MTO_AREA_DESC
+
 |参数名|类型|说明|
-|:-----  |:-----|-----                           |
+|:-----  |:-----|-----|
 |ID |String   |唯一标识 |
 |PROJECT_ID |String   |项目ID |
 |PO_DESC |String   |合同名称  |
