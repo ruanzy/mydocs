@@ -1,6 +1,6 @@
 ##### 退库列表查询
 
-**请求URL：** ` material/return `
+**请求URL：** ` material/return/list/{projectId} `
   
 **请求方式：** GET 
 
@@ -18,10 +18,11 @@
 
 ```json
   {
-    "code": 0,
-    "data": {
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3V..."
-    }
+    "rows": [...];
+    "total": 100,
+    "totalPages": 3,
+    "size": 10,
+    "page": 1,
   }
 ```
 
@@ -29,5 +30,20 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|code |int   |错误码，0：OK；非0：异常 |
-|data |Object   |返回数据  |
+|rows |Array   |当前页数据 |
+|total |Integer   |总记录数  |
+|totalPages |Integer   |总页数  |
+|size |Integer   |每页记录数  |
+|page |Integer   |当前页  |
+
+
+**rows参数说明** 
+PO_DESC, WL.WAREHOUSE_DESC,S.SUPPLIER_DESC,MTOA.MTO_AREA_DESC
+|参数名|类型|说明|
+|:-----  |:-----|-----                           |
+|ID |String   |唯一标识 |
+|PROJECT_ID |String   |项目ID |
+|PO_DESC |String   |合同名称  |
+|WAREHOUSE_DESC |String   |仓库名称  |
+|SUPPLIER_DESC |String   |供应商名称  |
+|MTO_AREA_DESC |String   |使用区域  |
