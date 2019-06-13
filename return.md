@@ -43,6 +43,8 @@
 |:-----  |:-----|-----|
 |ID |String   |唯一标识 |
 |PROJECT_ID |String   |项目ID |
+|RETURNS_CODE |String   |退库编码 |
+|PO_CODE |String   |合同编码 |
 |PO_DESC |String   |合同名称  |
 |WAREHOUSE_DESC |String   |仓库名称  |
 |SUPPLIER_DESC |String   |供应商名称  |
