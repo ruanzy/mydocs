@@ -10,9 +10,17 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|username |是  |string |用户名   |
-|password |是  |string | 密码    |
-|captcha |是  |string | 验证码    |
+|PROJECT_ID |是  |string |项目ID   |
+|RETURNS_CODE |否  |string |退库号   |
+|WAREHOUSE_CODE |否  |string | 仓库ID    |
+|USED_TO |否  |string | 使用区域ID    |
+|PO_CODE |否  |string | 合同编码    |
+|SUPPLIER |否  |string | 供应商ID    |
+|RECEIVED_BY |否  |string | 接收人ID    |
+|RETURNED_BY_NAME |否  |string | 退库人ID    |
+|RETURNS_STATUS |否  |string | 退库状态    |
+|RETURN_DATE_BEGIN |否  |Date | 退库开始日期    |
+|RETURN_DATE_END |否  |Date | 退库结束日期    |
 
  **返回示例**
 
