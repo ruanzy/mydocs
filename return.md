@@ -26,7 +26,7 @@
 
 ```json
   {
-    "rows": [...];
+    "rows": [...],
     "total": 100,
     "totalPages": 3,
     "size": 10,
@@ -71,3 +71,33 @@
 |INSERT_DATE |Date   |创建时间  |
 |MODIFY_USER |String   |修改人  |
 |MODIFY_DATE |Date   |修改时间  |
+
+##### 退库新增
+
+**请求URL：** ` /material/return/ `
+  
+**请求方式：** POST 
+
+**CONTENT-TYPE：** `application/json`
+
+**请求参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|PROJECT_ID |是  |string |项目ID   |
+|WAREHOUSE_CODE |否  |string | 仓库ID    |
+|USED_TO |否  |string | 使用区域ID    |
+|PO_CODE |否  |string | 合同编码    |
+|SUPPLIER |否  |string | 供应商ID    |
+|RECEIVED_BY |否  |string | 接收人ID    |
+|RETURNED_BY_NAME |否  |string | 退库人ID    |
+|RETURNS_STATUS |否  |string | 退库状态    |
+|RETURN_DATE |是  |Date | 退库日期    |
+|RETURN_REASON |是  |string | 退库原因    |
+|RETURN_NOTES |是  |string | 退库说明    |
+
+ **返回示例**
+
+```json
+  
+```
