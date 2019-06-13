@@ -4,9 +4,7 @@
   - [角色管理](/user)
   - [权限管理](/user)
 - 物资管理
-  - [退库管理](/return)
+  - [退库管理](/returns)
   - [转库管理](/transfer)
 - [动态sql](/dsql/)
 - 常见业务的实现思路
-	- [token验证](/biz/token)
-	- [密码加密传输](/biz/tool)
