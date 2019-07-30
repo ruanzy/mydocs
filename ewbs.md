@@ -15,7 +15,8 @@
 ```json
 "buildStructure": "05"
 "children": […]
-"code": "01"
+"code": "0102"
+"pcode": "01"
 "complete": 56.87
 "designPhase": "02"
 "designPoNo": "02"
@@ -37,10 +38,11 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 |
+|id |int   |唯一标识 ID|
+|pcode |string   |上级编码  |
 |code |string   |编码  |
 |name |string   |名称  |
-|pid |string   |上级编码  |
+|pid |string   |上级ID  |
 |designPhase |string   |设计阶段  |
 |designSpecial |string   |设计专业  |
 |resultType |string   |成果类型  |
@@ -70,7 +72,8 @@
 |:----    |:---|:----- |-----   |
 |code|是 |string   |编码  |
 |name |是 |string   |名称  |
-|pid |是 |string   |上级编码  |
+|pcode |是 string   |上级编码  |
+|pid |是 |string   |上级ID  |
 |designPhase |否 |string   |设计阶段  |
 |designSpecial |否 |string   |设计专业  |
 |resultType |否 | string   |成果类型  |
@@ -89,7 +92,8 @@
 
 ```json
 "buildStructure": "05"
-"code": "01"
+"code": "0102"
+"pcode": "01"
 "complete": 56.87
 "designPhase": "02"
 "designPoNo": "02"
@@ -114,7 +118,8 @@
 |id |int   |唯一标识 |
 |code |string   |编码  |
 |name |string   |名称  |
-|pid |string   |上级编码  |
+|pcode |string   |上级编码  |
+|pid |string   |上级ID  |
 |designPhase |string   |设计阶段  |
 |designSpecial |string   |设计专业  |
 |resultType |string   |成果类型  |
@@ -163,7 +168,8 @@
 |id |是 |int   |唯一标识 |
 |code|否 |string   |编码  不可修改|
 |name |是 |string   |名称  |
-|pid |是 |string   |上级编码  |
+|pcode |否 |string   |上级编码  不可修改|
+|pid |是 |string   |上级ID  |
 |designPhase |否 |string   |设计阶段  |
 |designSpecial |否 |string   |设计专业  |
 |resultType |否 | string   |成果类型  |
@@ -186,7 +192,8 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 
 ```json
 "buildStructure": "05"
-"code": "01"
+"code": "0102"
+"pcode": "01"
 "complete": 56.87
 "designPhase": "02"
 "designPoNo": "02"
@@ -211,7 +218,8 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 |id |int   |唯一标识 |
 |code |string   |编码  |
 |name |string   |名称  |
-|pid |string   |上级编码  |
+|pcode |string   |上级编码  |
+|pid |string   |上级ID  |
 |designPhase |string   |设计阶段  |
 |designSpecial |string   |设计专业  |
 |resultType |string   |成果类型  |
@@ -243,7 +251,8 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 
 ```json
 "buildStructure": "05"
-"code": "01"
+"code": "0102"
+"pcode": "01"
 "complete": 56.87
 "designPhase": "02"
 "designPoNo": "02"
@@ -270,7 +279,8 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 |id |int   |唯一标识 |
 |code |string   |编码  |
 |name |string   |名称  |
-|pid |string   |上级编码  |
+|pcode |string   |上级编码  |
+|pid |string   |上级ID  |
 |designPhase |string   |设计阶段  |
 |designSpecial |string   |设计专业  |
 |resultType |string   |成果类型  |
