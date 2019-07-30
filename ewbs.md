@@ -62,6 +62,8 @@
   
 **请求方式：** POST 
 
+**CONTENT-TYPE：** `application/json`
+
 **参数：** 
 
 |参数名|必选|类型|说明|
@@ -126,3 +128,22 @@
 |weight |string   |计划权重  |
 |complete |string   |实际完成比例  |
 |designPoNo |string   |设计合同  |
+
+##### EWBS删除
+
+**请求URL：** ` /design/ewbs/{id} `
+  
+**请求方式：** DELETE 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|id |是  |string |唯一标识ID   |
+
+ **返回示例**
+
+```json
+
+```
+
