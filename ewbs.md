@@ -161,7 +161,7 @@
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |id |是 |int   |唯一标识 |
-|code|是 |string   |编码  |
+|code|否 |string   |编码  不可修改|
 |name |是 |string   |名称  |
 |pid |是 |string   |上级编码  |
 |designPhase |否 |string   |设计阶段  |
@@ -177,6 +177,10 @@
 |weight |否 | string   |计划权重  |
 |complete |否 | string   |实际完成比例  |
 |designPoNo |是 | string   |设计合同  |
+
+**注意**
+EWBS存在下级，则不能修改EWBS编码和计划开始时间、计划结束时间。
+EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时间、计划结束时间。
 
  **返回示例**
 
