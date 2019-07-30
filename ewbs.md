@@ -37,5 +37,20 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|code |int   |错误码，0：OK；非0：异常 |
-|data |Object   |返回数据  |
+|id |int   |唯一标识 |
+|code |string   |编码  |
+|name |string   |名称  |
+|pid |string   |上级编码  |
+|designPhase |string   |设计阶段  |
+|designSpecial |string   |设计专业  |
+|resultType |string   |成果类型  |
+|buildStructure |string   |建筑结构  |
+|buildStructure |string   |建筑结构  |
+|purchaseTender |string   |采购标包  |
+|planEndTime |string   |计划结束时间  |
+|startTime |string   |实际开始时间 |
+|endTime |string   |实际结束时间  |
+|remark |string   |备注  |
+|weight |string   |计划权重  |
+|complete |string   |实际完成比例  |
+|designPoNo |string   |设计合同  |
