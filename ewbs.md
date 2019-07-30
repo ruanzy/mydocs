@@ -4,25 +4,33 @@
   
 **请求方式：** GET 
 
-**CONTENT-TYPE：** `application/x-www-form-urlencoded`
-
 **参数：** 
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|username |是  |string |用户名   |
-|password |是  |string | 密码    |
-|captcha |是  |string | 验证码    |
+|poNo |否  |string |设计合同编号   |
 
  **返回示例**
 
 ```json
-  {
-    "code": 0,
-    "data": {
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcm9tX3V..."
-    }
-  }
+"buildStructure": "05"
+"children": […]
+"code": "01"
+"complete": 56.87
+"designPhase": "02"
+"designPoNo": "02"
+"designSpecial": "03"
+"endTime": 1564462242000
+"id": 1
+"name": "AA"
+"pid": 0
+"planEndTime": 1564462237000
+"planStartTime": 1564462234000
+"purchaseTender": "06"
+"remark": "KKK"
+"resultType": "04"
+"startTime": 1564462239000
+"weight": 37.86
 ```
 
  **返回参数说明** 
