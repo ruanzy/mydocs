@@ -72,7 +72,7 @@
 |:----    |:---|:----- |-----   |
 |code|是 |string   |编码  |
 |name |是 |string   |名称  |
-|pcode |是 string   |上级编码  |
+|pcode |是|string   |上级编码  |
 |pid |是 |string   |上级ID  |
 |designPhase |否 |string   |设计阶段  |
 |designSpecial |否 |string   |设计专业  |
@@ -150,7 +150,7 @@
 
 ```json
 {
-  "code"：10000
+  "code"：10000,
   "message": "当前EWBS项存在下级，不能被删除"
 }
 ```
