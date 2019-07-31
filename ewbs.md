@@ -150,8 +150,8 @@
 
 ```json
 {
-  code：10000
-  message: '当前EWBS项存在下级，不能被删除'
+  "code"：10000
+  "message": "当前EWBS项存在下级，不能被删除"
 }
 ```
 
