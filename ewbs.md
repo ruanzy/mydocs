@@ -8,7 +8,7 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|poNo |是  |string |设计合同编号   |
+|poId |是  |string |设计合同ID   |
 
  **返回示例**
 
@@ -19,7 +19,7 @@
 "pcode": "01"
 "complete": 56.87
 "designPhase": "02"
-"designPoNo": "02"
+"designPoId": "02"
 "designSpecial": "03"
 "endTime": 1564462242000
 "id": 1
@@ -55,7 +55,7 @@
 |remark |string   |备注  |
 |weight |string   |计划权重  |
 |complete |string   |实际完成比例  |
-|designPoNo |string   |设计合同  |
+|designPoId |string   |设计合同  |
 
 
 ##### EWBS新增
@@ -86,7 +86,7 @@
 |remark |否 | string   |备注  |
 |weight |否 | string   |计划权重  |
 |complete |否 | string   |实际完成比例  |
-|designPoNo |是 | string   |设计合同  |
+|designPoId |是 | string   |设计合同  |
 
  **返回示例**
 
@@ -96,7 +96,7 @@
 "pcode": "01"
 "complete": 56.87
 "designPhase": "02"
-"designPoNo": "02"
+"designPoId": "02"
 "designSpecial": "03"
 "endTime": 1564462242000
 "id": 1
@@ -132,7 +132,7 @@
 |remark |string   |备注  |
 |weight |string   |计划权重  |
 |complete |string   |实际完成比例  |
-|designPoNo |string   |设计合同  |
+|designPoId |string   |设计合同  |
 
 ##### EWBS删除
 
@@ -182,7 +182,7 @@
 |remark |否 | string   |备注  |
 |weight |否 | string   |计划权重  |
 |complete |否 | string   |实际完成比例  |
-|designPoNo |是 | string   |设计合同  |
+|designPoId |是 | string   |设计合同  |
 
 **注意**
 EWBS存在下级，则不能修改EWBS编码和计划开始时间、计划结束时间。
@@ -196,7 +196,7 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 "pcode": "01"
 "complete": 56.87
 "designPhase": "02"
-"designPoNo": "02"
+"designPoId": "02"
 "designSpecial": "03"
 "endTime": 1564462242000
 "id": 1
@@ -232,7 +232,7 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 |remark |string   |备注  |
 |weight |string   |计划权重  |
 |complete |string   |实际完成比例  |
-|designPoNo |string   |设计合同  |
+|designPoId |string   |设计合同  |
 
 
 ##### EWBS查询
@@ -255,7 +255,7 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 "pcode": "01"
 "complete": 56.87
 "designPhase": "02"
-"designPoNo": "02"
+"designPoId": "02"
 "designSpecial": "03"
 "endTime": 1564462242000
 "id": 1
@@ -293,6 +293,6 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
 |remark |string   |备注  |
 |weight |string   |计划权重  |
 |complete |string   |实际完成比例  |
-|designPoNo |string   |设计合同  |
+|designPoId |string   |设计合同  |
 |hasSub |string   |是否有子节点  |
 |hasRelation |string   |是否被设计包引用 |
