@@ -39,6 +39,7 @@
 |designPoId |string   |设计合同  |
 
 
+
 ##### 设计在线评审新增
 
 **请求URL：** ` /design/reviewOnline `
@@ -74,26 +75,16 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 |
-|code |string   |编码  |
-|name |string   |名称  |
-|pcode |string   |上级编码  |
-|pid |string   |上级ID  |
-|designPhase |string   |设计阶段  |
-|designSpecial |string   |设计专业  |
-|resultType |string   |成果类型  |
-|buildStructure |string   |建筑结构  |
-|purchaseTender |string   |采购标包  |
-|planStartTime |string   |计划开始时间  |
-|planEndTime |string   |计划结束时间  |
-|startTime |string   |实际开始时间 |
-|endTime |string   |实际结束时间  |
-|remark |string   |备注  |
-|weight |string   |计划权重  |
-|complete |string   |实际完成比例  |
+|id |int   |唯一标识 ID|
+|batchNo |int   |批次数量  |
+|batchName |string   |批次名称  |
+|drawingsNumber |int   |图纸数量  |
+|applyTime |string   |申请时间  |
+|approvalTime |string   |审批时间  |
+|status |string   |状态  |
 |designPoId |string   |设计合同  |
 
-##### EWBS删除
+##### 设计在线评审删除
 
 **请求URL：** ` /design/reviewOnline/{id} `
   
@@ -109,11 +100,11 @@
 
 ```json
   "code": 10000
-  "message": "当前EWBS项存在下级，不能被删除"
+  "message": ""
 ```
 
 
-##### EWBS修改
+##### 设计在线评审修改
 
 **请求URL：** ` /design/reviewOnline/ `
   
@@ -126,76 +117,40 @@
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |id |是 |int   |唯一标识 |
-|code|否 |string   |编码  不可修改|
-|name |是 |string   |名称  |
-|pcode |否 |string   |上级编码  不可修改|
-|pid |是 |string   |上级ID  |
-|designPhase |否 |string   |设计阶段  |
-|designSpecial |否 |string   |设计专业  |
-|resultType |否 | string   |成果类型  |
-|buildStructure |否 |string   |建筑结构  |
-|purchaseTender |否 | string   |采购标包  |
-|planStartTime |是 | string   |计划开始时间  |
-|planEndTime |是 | string   |计划结束时间  |
-|startTime |否 | string   |实际开始时间 |
-|endTime |否 | string   |实际结束时间  |
-|remark |否 | string   |备注  |
-|weight |否 | string   |计划权重  |
-|complete |否 | string   |实际完成比例  |
+|batchNo |是 |int   |批次数量  |
+|batchName |是 |string   |批次名称  |
+|drawingsNumber |是 |int   |图纸数量  |
+|applyTime |是 |string   |申请时间  |
 |designPoId |是 | string   |设计合同  |
-
-**注意**
-EWBS存在下级，则不能修改EWBS编码和计划开始时间、计划结束时间。
-EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时间、计划结束时间。
 
  **返回示例**
 
 ```json
-"buildStructure": "05"
-"code": "0102"
-"pcode": "01"
-"complete": 56.87
-"designPhase": "02"
-"designPoId": "02"
-"designSpecial": "03"
-"endTime": 1564462242000
 "id": 1
-"name": "AA"
-"pid": 0
-"planEndTime": 1564462237000
-"planStartTime": 1564462234000
-"purchaseTender": "06"
-"remark": "KKK"
-"resultType": "04"
-"startTime": 1564462239000
-"weight": 37.86
+"batchNo": 1
+"batchName": "第一批"
+"drawingsNumber": 5
+"applyTime": 1564462242000
+"approvalTime": 
+"status": '1'
+"designPoId": "02"
 ```
 
  **返回参数说明** 
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 |
-|code |string   |编码  |
-|name |string   |名称  |
-|pcode |string   |上级编码  |
-|pid |string   |上级ID  |
-|designPhase |string   |设计阶段  |
-|designSpecial |string   |设计专业  |
-|resultType |string   |成果类型  |
-|buildStructure |string   |建筑结构  |
-|purchaseTender |string   |采购标包  |
-|planStartTime |string   |计划开始时间  |
-|planEndTime |string   |计划结束时间  |
-|startTime |string   |实际开始时间 |
-|endTime |string   |实际结束时间  |
-|remark |string   |备注  |
-|weight |string   |计划权重  |
-|complete |string   |实际完成比例  |
+|id |int   |唯一标识 ID|
+|batchNo |int   |批次数量  |
+|batchName |string   |批次名称  |
+|drawingsNumber |int   |图纸数量  |
+|applyTime |string   |申请时间  |
+|approvalTime |string   |审批时间  |
+|status |string   |状态  |
 |designPoId |string   |设计合同  |
 
 
-##### EWBS查询
+##### 设计在线评审查询
 
 **请求URL：** ` /design/reviewOnline/{id} `
   
@@ -210,50 +165,26 @@ EWBS底层项被设计包关联后，则不能修改EWBS编码和计划开始时
  **返回示例**
 
 ```json
-"buildStructure": "05"
-"code": "0102"
-"pcode": "01"
-"complete": 56.87
-"designPhase": "02"
-"designPoId": "02"
-"designSpecial": "03"
-"endTime": 1564462242000
 "id": 1
-"name": "AA"
-"pid": 0
-"planEndTime": 1564462237000
-"planStartTime": 1564462234000
-"purchaseTender": "06"
-"remark": "KKK"
-"resultType": "04"
-"startTime": 1564462239000
-"weight": 37.86
-"hasRelation": 0
-"hasSub": 0
+"batchNo": 1
+"batchName": "第一批"
+"drawingsNumber": 5
+"applyTime": 1564462242000
+"approvalTime": 
+"status": '1'
+"designPoId": "02"
 ```
 
  **返回参数说明** 
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 |
-|code |string   |编码  |
-|name |string   |名称  |
-|pcode |string   |上级编码  |
-|pid |string   |上级ID  |
-|designPhase |string   |设计阶段  |
-|designSpecial |string   |设计专业  |
-|resultType |string   |成果类型  |
-|buildStructure |string   |建筑结构  |
-|purchaseTender |string   |采购标包  |
-|planStartTime |string   |计划开始时间  |
-|planEndTime |string   |计划结束时间  |
-|startTime |string   |实际开始时间 |
-|endTime |string   |实际结束时间  |
-|remark |string   |备注  |
-|weight |string   |计划权重  |
-|complete |string   |实际完成比例  |
+|id |int   |唯一标识 ID|
+|batchNo |int   |批次数量  |
+|batchName |string   |批次名称  |
+|drawingsNumber |int   |图纸数量  |
+|applyTime |string   |申请时间  |
+|approvalTime |string   |审批时间  |
+|status |string   |状态  |
 |designPoId |string   |设计合同  |
-|hasSub |string   |是否有子节点  |
-|hasRelation |string   |是否被设计包引用 |
 
