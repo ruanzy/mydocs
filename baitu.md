@@ -1,6 +1,6 @@
-##### 设计在线评审列表查询
+##### 设计评审列表查询
 
-**请求URL：** ` /design/reviewOnline/list `
+**请求URL：** ` /design/review/list `
   
 **请求方式：** GET 
 
@@ -23,6 +23,7 @@
 "approvalTime": 1564462242000
 "status": '1'
 "designPoId": "02"
+"inserUser": "admin"
 ```
 
  **返回参数说明** 
@@ -40,9 +41,9 @@
 
 
 
-##### 设计在线评审新增
+##### 设计评审新增
 
-**请求URL：** ` /design/reviewOnline `
+**请求URL：** ` /design/review `
   
 **请求方式：** POST 
 
@@ -84,9 +85,9 @@
 |status |string   |状态  |
 |designPoId |string   |设计合同  |
 
-##### 设计在线评审删除
+##### 设计评审删除
 
-**请求URL：** ` /design/reviewOnline/{id} `
+**请求URL：** ` /design/review/{id} `
   
 **请求方式：** DELETE 
 
@@ -104,9 +105,9 @@
 ```
 
 
-##### 设计在线评审修改
+##### 设计评审修改
 
-**请求URL：** ` /design/reviewOnline/ `
+**请求URL：** ` /design/review/ `
   
 **请求方式：** PATCH
 
@@ -150,9 +151,9 @@
 |designPoId |string   |设计合同  |
 
 
-##### 设计在线评审查询
+##### 设计评审查询
 
-**请求URL：** ` /design/reviewOnline/{id} `
+**请求URL：** ` /design/review/{id} `
   
 **请求方式：** GET
 
