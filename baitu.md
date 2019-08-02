@@ -23,7 +23,10 @@
 "approvalTime": 1564462242000
 "status": '1'
 "designPoId": "02"
-"inserUser": "admin"
+"insertUser": "admin"
+"insertDate": 1564462242000
+"modifyUser": "admin"
+"modifyDate": 1564462242000
 ```
 
  **返回参数说明** 
@@ -38,6 +41,10 @@
 |approvalTime |string   |审批时间  |
 |status |string   |状态  |
 |designPoId |string   |设计合同  |
+|insertUser |string   |新增用户  |
+|insertDate |string   |新增时间  |
+|modifyUser |string   |修改用户  |
+|modifyDate |string   |修改时间  |
 
 
 
@@ -70,6 +77,10 @@
 "approvalTime": 
 "status": '1'
 "designPoId": "02"
+"insertUser": "admin"
+"insertDate": 1564462242000
+"modifyUser": "admin"
+"modifyDate": 1564462242000
 ```
 
  **返回参数说明** 
@@ -84,6 +95,27 @@
 |approvalTime |string   |审批时间  |
 |status |string   |状态  |
 |designPoId |string   |设计合同  |
+|insertUser |string   |新增用户  |
+|insertDate |string   |新增时间  |
+|modifyUser |string   |修改用户  |
+|modifyDate |string   |修改时间  |
+
+
+##### 设计评审新增成果
+
+**请求URL：** ` /design/review/addResult `
+  
+**请求方式：** POST 
+
+**CONTENT-TYPE：** `application/json`
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|reviewId |是  |string |评审ID, 唯一标识ID   |
+|resultVersionId |是  |string |设计成果版本ID   |
+
 
 ##### 设计评审删除
 
@@ -135,6 +167,10 @@
 "approvalTime": 
 "status": '1'
 "designPoId": "02"
+"insertUser": "admin"
+"insertDate": 1564462242000
+"modifyUser": "admin"
+"modifyDate": 1564462242000
 ```
 
  **返回参数说明** 
@@ -149,7 +185,10 @@
 |approvalTime |string   |审批时间  |
 |status |string   |状态  |
 |designPoId |string   |设计合同  |
-
+|insertUser |string   |新增用户  |
+|insertDate |string   |新增时间  |
+|modifyUser |string   |修改用户  |
+|modifyDate |string   |修改时间  |
 
 ##### 设计评审查询
 
@@ -174,6 +213,10 @@
 "approvalTime": 
 "status": '1'
 "designPoId": "02"
+"insertUser": "admin"
+"insertDate": 1564462242000
+"modifyUser": "admin"
+"modifyDate": 1564462242000
 ```
 
  **返回参数说明** 
@@ -188,4 +231,8 @@
 |approvalTime |string   |审批时间  |
 |status |string   |状态  |
 |designPoId |string   |设计合同  |
+|insertUser |string   |新增用户  |
+|insertDate |string   |新增时间  |
+|modifyUser |string   |修改用户  |
+|modifyDate |string   |修改时间  |
 
