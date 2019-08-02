@@ -15,21 +15,43 @@
  **返回示例**
 
 ```json
-"id": 1
-"batchNo": 1
-"batchName": "第一批"
-"drawingsNumber": 5
-"applyTime": 1564462242000
-"approvalTime": 1564462242000
-"status": '1'
-"designPoId": "02"
-"insertUser": "admin"
-"insertDate": 1564462242000
-"modifyUser": "admin"
-"modifyDate": 1564462242000
+{
+    "rows": [...],
+    "total": 100,
+    "totalPages": 3,
+    "size": 10,
+    "page": 1,
+}
 ```
 
- **返回参数说明** 
+```
+{
+    "id": 1
+    "batchNo": 1
+    "batchName": "第一批"
+    "drawingsNumber": 5
+    "applyTime": 1564462242000
+    "approvalTime": 1564462242000
+    "status": '1'
+    "designPoId": "02"
+    "insertUser": "admin"
+    "insertDate": 1564462242000
+    "modifyUser": "admin"
+    "modifyDate": 1564462242000
+}
+```
+
+ **返回说明** 
+ 
+|参数名|类型|说明|
+|:-----  |:-----|-----                           |
+|rows |array   |当前页数据|
+|total |int   |总记录数 |
+|totalPages |int   |总页数  |
+|size	 |int   |每页记录数  |
+|page |int   |当前页 |
+ 
+ **rows说明** 
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
