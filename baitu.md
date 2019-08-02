@@ -137,10 +137,10 @@
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |reviewId |是  |string |评审ID, 唯一标识ID   |
-|resultVersionId |是  |string |设计成果版本ID   |
+|resultVersionIds |是  |array |设计成果版本ID(多个)   |
 
 
-##### 设计评审删除
+##### 设计评审删除(同时删除成果)
 
 **请求URL：** ` /design/review/{id} `
   
