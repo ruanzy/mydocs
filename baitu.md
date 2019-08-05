@@ -11,6 +11,7 @@
 |poId |否  |string |设计合同ID   |
 |batch |否  |string |批次号或批次名称   |
 |status |否  |string |状态   |
+|resultVersion |是 | string   |白图: 1, 蓝图: 2  |
 
  **返回示例**
 
@@ -111,6 +112,7 @@ eg: ?time=20190805
     "drawingsNumber": 5
     "applyTime": 1564462242000
     "designPoId": "02"
+    "resultVersion": 1
   },
   results:[...],
   attach: {...}
@@ -128,6 +130,7 @@ eg: ?time=20190805
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
 |designPoId |是 | string   |设计合同  |
+|resultVersion |是 | string   |白图: 1, 蓝图: 2  |
 
 **results参数说明**
 
