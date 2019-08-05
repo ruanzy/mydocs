@@ -101,8 +101,25 @@ eg: ?time=20190805
 
 **CONTENT-TYPE：** `application/json`
 
-**参数：** 
+**参数示例**
 
+```json
+{
+  form: {
+    "batchNo": 1
+    "batchName": "第一批"
+    "drawingsNumber": 5
+    "applyTime": 1564462242000
+    "designPoId": "02"
+  },
+  results:[...],
+  attaches: [...]
+}
+```
+
+**参数说明：** 
+
+**form参数说明**
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |batchNo |是 |int   |批次号  |
@@ -110,6 +127,15 @@ eg: ?time=20190805
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
 |designPoId |是 | string   |设计合同  |
+
+**results参数说明**
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|results |是 |array   |成果版本ID  |
+
+**attaches参数说明**
+|:----    |:---|:----- |-----   |
+|attaches |是 |array   |附件ID  |
 
  **返回示例**
 
