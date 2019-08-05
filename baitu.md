@@ -74,8 +74,7 @@
 
 **请求URL：** ` /design/review/nextBatchNo `
   
-*
-*请求方式：** GET 
+**请求方式：** GET 
 
 **参数：** 
 eg: ?time=20190805
