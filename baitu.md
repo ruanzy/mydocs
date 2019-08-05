@@ -113,7 +113,7 @@ eg: ?time=20190805
     "designPoId": "02"
   },
   results:[...],
-  attaches: [...]
+  attach: {...}
 }
 ```
 
@@ -135,10 +135,11 @@ eg: ?time=20190805
 |:----    |:---|:----- |-----   |
 |results |是 |array   |成果版本ID  |
 
-**attaches参数说明**
+**attach参数说明**
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
+|businessKey |是 |string   |流程业务键  |
 |attaches |是 |array   |附件ID  |
 
  **返回示例**
