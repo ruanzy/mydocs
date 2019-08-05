@@ -57,7 +57,7 @@
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |id |int   |唯一标识 ID|
-|batchNo |int   |批次数量  |
+|batchNo |int   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -83,7 +83,7 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|batchNo |是 |int   |批次数量  |
+|batchNo |是 |int   |批次号  |
 |batchName |是 |string   |批次名称  |
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
@@ -111,7 +111,7 @@
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |id |int   |唯一标识 ID|
-|batchNo |int   |批次数量  |
+|batchNo |int   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -173,7 +173,7 @@
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |id |是 |int   |唯一标识 |
-|batchNo |是 |int   |批次数量  |
+|batchNo |是 |int   |批次号  |
 |batchName |是 |string   |批次名称  |
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
@@ -201,7 +201,7 @@
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |id |int   |唯一标识 ID|
-|batchNo |int   |批次数量  |
+|batchNo |int   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -247,7 +247,7 @@
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |id |int   |唯一标识 ID|
-|batchNo |int   |批次数量  |
+|batchNo |int   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
