@@ -100,7 +100,76 @@ eg: ?time=20190805
 >999抛出异常信息
 
 
+##### 设计评审成果树查询
 
+**请求URL：** ` /design/review/resultTree `
+  
+**请求方式：** GET 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|poId |是  |string |设计合同ID   |
+|reviewId |是  |string |设计成果评审ID   |
+|resultVersion |是  |string   |白图: 1, 蓝图: 2  |
+
+ **返回示例**
+
+```json
+[{
+	"children": [{
+		"resultCode": "111#0",
+		"files": [],
+		"pid": "40287f816c514ae5016c518d06d80000",
+		"disabled": 0,
+		"id": "f40f847a859e4a0c806cfc4a7014fbde",
+		"label": "test 1【1 白图】",
+		"type": 2,
+		"resultVersionId": "b33f6806ea3b4b2db785a29b1dcb557a"
+	}],
+	"pid": "0",
+	"disabled": null,
+	"id": "40287f816c514ae5016c518d06d80000",
+	"label": "111",
+	"type": 1
+}, {
+	"children": [{
+		"resultCode": "222#3",
+		"files": [],
+		"pid": "40287f816c514ae5016c518d7bcf0001",
+		"disabled": 0,
+		"id": "097573e0dc1f4bca9e3318d54c388821",
+		"label": "4【1 白图】",
+		"type": 2,
+		"resultVersionId": "f48a162664464f1cb75f7846dfbfda67"
+	}, {
+		"resultCode": "222#1",
+		"files": [],
+		"pid": "40287f816c514ae5016c518d7bcf0001",
+		"disabled": 0,
+		"id": "2e653e9e940544c6b5f8fdea79507ce8",
+		"label": "2【1 白图】",
+		"type": 2,
+		"resultVersionId": "b11a2500f3724f0c84e197ef9db1ab03"
+	}, {
+		"resultCode": "222#0",
+		"files": [],
+		"pid": "40287f816c514ae5016c518d7bcf0001",
+		"disabled": 0,
+		"id": "b859fb48c285489f8e59fe30f00eaad8",
+		"label": "1【1 白图】",
+		"type": 2,
+		"resultVersionId": "ce17244807a940ce8bd2c44a4a31477e"
+	}],
+	"pid": "0",
+	"disabled": null,
+	"id": "40287f816c514ae5016c518d7bcf0001",
+	"label": "222",
+	"type": 1
+}]
+```
+>999抛出异常信息
 
 ##### 设计评审新增
 
