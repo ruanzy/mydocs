@@ -189,14 +189,13 @@ eg: ?time=20190805
     "drawingsNumber": 5,
     "applyTime": 1564462242000,
     "designPoId": "8ac4c0ff6c40f347016c41c5fb950000",
+    "projectId": "8ac4edf56b2c1060016b2c15d0bd0000",
     "resultVersion": 1,
     "results": [1, 2, ...]
 }
 ```
 
 **参数说明：** 
-
-**form参数说明**
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
@@ -206,13 +205,10 @@ eg: ?time=20190805
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
 |designPoId |是 | string   |设计合同  |
+|projectId |是 | string   |项目ID|
 |resultVersion |是 | string   |白图: 1, 蓝图: 2  |
-
-**results参数说明**
-
-|参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
 |results |是 |array   |成果版本ID  |
+
 
  **返回示例**
 
@@ -235,8 +231,8 @@ eg: ?time=20190805
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 ID|
-|batchNo |int   |批次号  |
+|id |string   |唯一标识 ID|
+|batchNo |string   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -247,6 +243,9 @@ eg: ?time=20190805
 |insertDate |string   |新增时间  |
 |modifyUser |string   |修改用户  |
 |modifyDate |string   |修改时间  |
+|projectId |string   |项目ID|
+|releaseUserName |string   |发布者|
+|resultVersion |string   |白图: 1, 蓝图: 2  |
 
 
 ##### 设计评审删除(同时删除成果)
@@ -287,6 +286,7 @@ eg: ?time=20190805
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
 |designPoId |是 | string   |设计合同  |
+|results |是 | array   |成果版本ID  |
 
  **返回示例**
 
@@ -303,14 +303,18 @@ eg: ?time=20190805
 "insertDate": 1564462242000
 "modifyUser": "admin"
 "modifyDate": 1564462242000
+"projectId": "8ac4edf56b2c1060016b2c15d0bd0000",
+"releaseUserName": null,
+"resultVersion": "1",
+"results": [1, 2, ...]
 ```
 
  **返回参数说明** 
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 ID|
-|batchNo |int   |批次号  |
+|id |string   |唯一标识 ID|
+|batchNo |string   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -321,6 +325,10 @@ eg: ?time=20190805
 |insertDate |string   |新增时间  |
 |modifyUser |string   |修改用户  |
 |modifyDate |string   |修改时间  |
+|projectId |string   |项目ID|
+|releaseUserName |string   |发布者|
+|resultVersion |string   |白图: 1, 蓝图: 2  |
+|results |array   |成果版本ID  |
 
 ##### 设计评审查询
 
@@ -332,7 +340,7 @@ eg: ?time=20190805
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|id |是 |int   |唯一标识 |
+|id |是 |string   |唯一标识 |
 
  **返回示例**
 
@@ -349,6 +357,9 @@ eg: ?time=20190805
 "insertDate": 1564462242000
 "modifyUser": "admin"
 "modifyDate": 1564462242000
+"projectId": "8ac4edf56b2c1060016b2c15d0bd0000",
+"releaseUserName": null,
+"resultVersion": "1",
 "results": [1, 2, ...]
 ```
 
@@ -356,8 +367,8 @@ eg: ?time=20190805
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 ID|
-|batchNo |int   |批次号  |
+|id |string   |唯一标识 ID|
+|batchNo |string   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
@@ -368,4 +379,8 @@ eg: ?time=20190805
 |insertDate |string   |新增时间  |
 |modifyUser |string   |修改用户  |
 |modifyDate |string   |修改时间  |
+|projectId |string   |项目ID|
+|releaseUserName |string   |发布者|
+|resultVersion |string   |白图: 1, 蓝图: 2  |
+|results |array   |成果版本ID  |
 
