@@ -35,7 +35,7 @@
     "applyTime": 1564462242000,
     "approvalTime": 1564462242000,
     "status": '1',
-    "designPoId": "02",
+    "designPoId": "8ac4c0ff6c40f347016c41c5fb950000",
     "insertUser": "admin",
     "insertDate": 1564462242000,
     "modifyUser": "admin",
@@ -43,7 +43,7 @@
     "projectId": "8ac4edf56b2c1060016b2c15d0bd0000",
     "releaseUserName": null,
     "resultVersion": "1",
-    "hasResult": 1,
+    "hasResult": 1
 }
 ```
 
@@ -73,6 +73,10 @@
 |insertDate |string   |新增时间  |
 |modifyUser |string   |修改用户  |
 |modifyDate |string   |修改时间  |
+|projectId |string   |项目ID|
+|releaseUserName |string   |发布者|
+|resultVersion |string   |白图: 1, 蓝图: 2  |
+|hasResult |int   |是否有成果|
 
 
 ##### 设计评审批次序列号获取
@@ -91,7 +95,7 @@ eg: ?time=20190805
  **返回示例**
 
 ```json
-085
+20190805085
 ```
 >999抛出异常信息
 
@@ -110,16 +114,14 @@ eg: ?time=20190805
 
 ```json
 {
-  form: {
     "id": "1755c501b1cc4e06ac98737edcc5db6b",
     "batchNo": "20190807003",
     "batchName": "第一批",
     "drawingsNumber": 5,
     "applyTime": 1564462242000,
-    "designPoId": "02",
-    "resultVersion": 1
-  },
-  results:[...]
+    "designPoId": "8ac4c0ff6c40f347016c41c5fb950000",
+    "resultVersion": 1,
+    "results": [1, 2, ...]
 }
 ```
 
@@ -176,22 +178,6 @@ eg: ?time=20190805
 |insertDate |string   |新增时间  |
 |modifyUser |string   |修改用户  |
 |modifyDate |string   |修改时间  |
-
-
-##### 设计评审新增成果
-
-**请求URL：** ` /design/review/addResult `
-  
-**请求方式：** POST 
-
-**CONTENT-TYPE：** `application/json`
-
-**参数：** 
-
-|参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
-|reviewId |是  |string |评审ID, 唯一标识ID   |
-|resultVersionIds |是  |array |设计成果版本ID(多个)   |
 
 
 ##### 设计评审删除(同时删除成果)
@@ -294,6 +280,7 @@ eg: ?time=20190805
 "insertDate": 1564462242000
 "modifyUser": "admin"
 "modifyDate": 1564462242000
+"results": [1, 2, ...]
 ```
 
  **返回参数说明** 
