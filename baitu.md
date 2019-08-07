@@ -100,22 +100,22 @@ eg: ?time=20190805
   
 **请求方式：** POST 
 
-**CONTENT-TYPE：** `application/json`
+**Content-Type：** `application/json`
 
 **参数示例**
 
 ```json
 {
   form: {
-    "batchNo": 1
-    "batchName": "第一批"
-    "drawingsNumber": 5
-    "applyTime": 1564462242000
-    "designPoId": "02"
+    "id": "1755c501b1cc4e06ac98737edcc5db6b",
+    "batchNo": "20190807003",
+    "batchName": "第一批",
+    "drawingsNumber": 5,
+    "applyTime": 1564462242000,
+    "designPoId": "02",
     "resultVersion": 1
   },
-  results:[...],
-  attach: {...}
+  results:[...]
 }
 ```
 
@@ -125,7 +125,8 @@ eg: ?time=20190805
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|batchNo |是 |int   |批次号  |
+|id |是 |string   |唯一标识ID  |
+|batchNo |是 |string   |批次号  |
 |batchName |是 |string   |批次名称  |
 |drawingsNumber |是 |int   |图纸数量  |
 |applyTime |是 |string   |申请时间  |
@@ -137,13 +138,6 @@ eg: ?time=20190805
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |results |是 |array   |成果版本ID  |
-
-**attach参数说明**
-
-|参数名|必选|类型|说明|
-|:----    |:---|:----- |-----   |
-|businessKey |是 |string   |流程业务键  |
-|attaches |是 |array   |附件ID  |
 
  **返回示例**
 
