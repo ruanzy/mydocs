@@ -28,18 +28,22 @@
 **rows明细** 
 ```json
 {
-    "id": 1
-    "batchNo": 1
-    "batchName": "第一批"
-    "drawingsNumber": 5
-    "applyTime": 1564462242000
-    "approvalTime": 1564462242000
-    "status": '1'
-    "designPoId": "02"
-    "insertUser": "admin"
-    "insertDate": 1564462242000
-    "modifyUser": "admin"
-    "modifyDate": 1564462242000
+    "id": "3334dc36737f441fbe09ad5a0abb6ec1",
+    "batchNo": "20190807001",
+    "batchName": "第一批",
+    "drawingsNumber": 5,
+    "applyTime": 1564462242000,
+    "approvalTime": 1564462242000,
+    "status": '1',
+    "designPoId": "02",
+    "insertUser": "admin",
+    "insertDate": 1564462242000,
+    "modifyUser": "admin",
+    "modifyDate": 1564462242000,
+    "projectId": "8ac4edf56b2c1060016b2c15d0bd0000",
+    "releaseUserName": null,
+    "resultVersion": "1",
+    "hasResult": 1,
 }
 ```
 
@@ -57,8 +61,8 @@
 
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
-|id |int   |唯一标识 ID|
-|batchNo |int   |批次号  |
+|id |string   |唯一标识 ID|
+|batchNo |string   |批次号  |
 |batchName |string   |批次名称  |
 |drawingsNumber |int   |图纸数量  |
 |applyTime |string   |申请时间  |
